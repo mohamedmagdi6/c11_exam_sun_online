@@ -1,6 +1,9 @@
+// ignore_for_file: file_names
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class AudiBooks extends StatelessWidget {
   AudiBooks({super.key});
 
@@ -25,8 +28,8 @@ class AudiBooks extends StatelessWidget {
           padding: const EdgeInsets.only(top: 46, left: 28),
           child: Image.asset('assets/icons/Logo Small.png'),
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(
+        title: const Padding(
+          padding: EdgeInsets.only(
             top: 46,
           ),
           child: Row(
@@ -58,9 +61,9 @@ class AudiBooks extends StatelessWidget {
             ],
           ),
         ),
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.only(top: 46, right: 28),
+            padding: EdgeInsets.only(top: 46, right: 28),
             child: ImageIcon(
               AssetImage('assets/icons/Setting.png'),
               size: 50,
@@ -70,8 +73,8 @@ class AudiBooks extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Color(0xFF4838D1),
-          selectedLabelStyle: TextStyle(
+          selectedItemColor: const Color(0xFF4838D1),
+          selectedLabelStyle: const TextStyle(
             fontFamily: 'Poppins',
             fontWeight: FontWeight.w500,
             fontSize: 10,
@@ -99,7 +102,7 @@ class AudiBooks extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Categories',
                     style: TextStyle(
                       fontFamily: 'Poppins',
@@ -109,7 +112,7 @@ class AudiBooks extends StatelessWidget {
                   ),
                   TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         'See more',
                         style: TextStyle(
                           fontFamily: 'Poppins',
@@ -120,7 +123,7 @@ class AudiBooks extends StatelessWidget {
                       ))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               SizedBox(
@@ -130,8 +133,12 @@ class AudiBooks extends StatelessWidget {
                   children: [
                     Container(
                       width: 55,
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF5F5FA),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Center(
                         child: Text(
                           'Art',
                           style: TextStyle(
@@ -141,18 +148,18 @@ class AudiBooks extends StatelessWidget {
                               color: Color(0xFF2E2E5D)),
                         ),
                       ),
-                      decoration: BoxDecoration(
-                        color: Color(0xFFF5F5FA),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     Container(
                       width: 102,
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF5F5FA),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Center(
                         child: Text(
                           'Business',
                           style: TextStyle(
@@ -162,18 +169,18 @@ class AudiBooks extends StatelessWidget {
                               color: Color(0xFF2E2E5D)),
                         ),
                       ),
-                      decoration: BoxDecoration(
-                        color: Color(0xFFF5F5FA),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     Container(
                       width: 101,
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF5F5FA),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Center(
                         child: Text(
                           'Comedy',
                           style: TextStyle(
@@ -183,18 +190,18 @@ class AudiBooks extends StatelessWidget {
                               color: Color(0xFF2E2E5D)),
                         ),
                       ),
-                      decoration: BoxDecoration(
-                        color: Color(0xFFF5F5FA),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     Container(
                       width: 102,
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF5F5FA),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Center(
                         child: Text(
                           'Drama',
                           style: TextStyle(
@@ -204,21 +211,17 @@ class AudiBooks extends StatelessWidget {
                               color: Color(0xFF2E2E5D)),
                         ),
                       ),
-                      decoration: BoxDecoration(
-                        color: Color(0xFFF5F5FA),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Recommended For You',
                     style: TextStyle(
                       fontFamily: 'Poppins',
@@ -228,7 +231,7 @@ class AudiBooks extends StatelessWidget {
                   ),
                   TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         'See more',
                         style: TextStyle(
                           fontFamily: 'Poppins',
@@ -239,7 +242,7 @@ class AudiBooks extends StatelessWidget {
                       ))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               CarouselSlider.builder(
@@ -251,7 +254,7 @@ class AudiBooks extends StatelessWidget {
                 itemCount: imageList.length,
                 itemBuilder:
                     (BuildContext context, int itemIndex, int pageViewIndex) =>
-                        Container(
+                        SizedBox(
                   width: 200,
                   child: Image.asset(
                     imageList[itemIndex],
@@ -259,13 +262,13 @@ class AudiBooks extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Best Sellet',
                     style: TextStyle(
                       fontFamily: 'Poppins',
@@ -275,7 +278,7 @@ class AudiBooks extends StatelessWidget {
                   ),
                   TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         'See more',
                         style: TextStyle(
                           fontFamily: 'Poppins',
@@ -286,7 +289,7 @@ class AudiBooks extends StatelessWidget {
                       ))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               SizedBox(
@@ -297,7 +300,7 @@ class AudiBooks extends StatelessWidget {
                       return Container(
                         width: 315,
                         decoration: BoxDecoration(
-                          color: Color(0xFFF5F5FA),
+                          color: const Color(0xFFF5F5FA),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
@@ -313,9 +316,8 @@ class AudiBooks extends StatelessWidget {
                                   fit: BoxFit.fill,
                                 ),
                               ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, top: 10),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 20, top: 10),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -347,13 +349,13 @@ class AudiBooks extends StatelessWidget {
                       );
                     },
                     separatorBuilder: (context, index) {
-                      return SizedBox(
+                      return const SizedBox(
                         width: 16,
                       );
                     },
                     itemCount: imageList.length),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               )
             ],
