@@ -1,4 +1,5 @@
 import 'package:c11_exam_sun_online/pages/audi_Books.dart';
+import 'package:c11_exam_sun_online/pages/moody_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: AudiBooks(),
+      debugShowCheckedModeBanner: false,
+      home: MoodyPage(),
     );
   }
 }
